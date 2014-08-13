@@ -14,6 +14,8 @@
 ##[1,] 0.4356307  0.13003901
 ##[2,] 0.1950585 -0.09102731
 ##
+## the same caching would work for large matrices as well. i.e. try setting foo to
+##> foo <- matrix(data = rnorm(100), nrow = 10, ncol = 10)
 
 ## makeCacheMatrix creates a special “matrix” object that can cache its inverse.
 makeCacheMatrix <- function(x = matrix()) {
